@@ -68,6 +68,7 @@ Different shots benefit from different motion engines. In practice, mixing model
 | **Hardware / Product Macro Reveal** | Kling 2.x, Runway Gen-4 | Restrict camera arc to `<= 35°` to prevent label/text hallucination |
 | **Liquid Pour / Caustics / Smoke** | Veo 3, Seedance 2.5 | Specify viscosity, slow-motion cadence (`120fps feel`), and specular highlight drift |
 | **Wide Atmospheric Establishing Shot** | Veo 3, Runway Gen-4, Luma | Slow lateral truck or gentle drone push; avoid rapid whip pans |
+| **Long-Take Native Audio (20–30s)** | MAGI-2 (480B MoE), Seedance 2.5 | Anchor 3-view turnaround + frozen keyframe even with 20-item Omni-Reference to avoid multi-character blending |
 
 ### Running the 3-Node Graph in Practice
 
@@ -77,6 +78,7 @@ You can run Node 1 → Node 2 → Node 3 manually by hopping between separate im
 - **Product demo reference**: [AI Product Video Generator Workflow](https://www.pixtv.ai/ai-product-video-generator) (2-plate hardware & label preservation patterns)
 - **Performance ad reference**: [AI Marketing Video Generator Patterns](https://www.pixtv.ai/ai-marketing-video-generator) (3-second hook & modular ad testing)
 - **Standalone engines**: Runway, Kling AI, Google Veo, Luma Dream Machine, ComfyUI local pipelines
+- **Frontier model benchmark notes**: [MAGI-2 vs. Seedance 2.5 (2026 Comparison)](https://www.pixtv.ai/blog/magi-2-vs-seedance-2-5-comparison) (Video Arena v2.1 Elo, 8x H100 self-hosting reality, and 720p workflow cost control)
 
 ---
 
